@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ActualidadComponent } from './components/pages/actualidad/actualidad.component';
-import { ActualidadComentatiosComponent } from './components/pages/actualidad-comentatios/actualidad-comentatios.component';
+import { ActualidadComentariosComponent } from './components/pages/actualidad-comentarios/actualidad-comentarios.component';
 import { ActualidadTutorialesComponent } from './components/pages/actualidad-tutoriales/actualidad-tutoriales.component';
 import { CulturaComponent } from './components/pages/cultura/cultura.component';
 import { CulturaDetalleComponent } from './components/pages/cultura-detalle/cultura-detalle.component';
@@ -25,7 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HomeComponent,
     ActualidadComponent,
-    ActualidadComentatiosComponent,
+    ActualidadComentariosComponent,
     ActualidadTutorialesComponent,
     CulturaComponent,
     CulturaDetalleComponent,
@@ -38,7 +38,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FinanzasComponent,
     EncuentrenosComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
