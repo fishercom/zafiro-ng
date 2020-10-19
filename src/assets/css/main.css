@@ -79,7 +79,7 @@ body.nonescroll {
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  *behavior: url(./js/htc/boxsizing.htc);
+  *behavior: url(../js/htc/boxsizing.htc);
 }
 
 /**{

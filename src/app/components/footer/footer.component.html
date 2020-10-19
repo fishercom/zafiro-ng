@@ -2,8 +2,8 @@
 		<div class="row">
 			<div class="col-md-3">
 				<div class="logo">
-					<a href="index.php">
-						<img src="images/logo.svg">
+					<a [routerLink]="['']">
+						<img src="/assets/images/logo.svg">
 					</a>
 				</div>
 				<div class="txt">
@@ -14,31 +14,31 @@
 			<div class="col-md-9">
 				<ul class="lista_menu">
 					<li class="menu_organizacion">
-						<a href="nuestra-organizacion.php" class="full"></a>
+						<a [routerLink]="['organizacion']" class="full"></a>
 						Nuestra <br>
 						Organización
 					</li>
 					<li class="menu_cultura">
-						<a href="cultura-interna.php" class="full"></a>
+						<a [routerLink]="['cultura']" class="full"></a>
 						Cultura <br>
 						Interna
 					</li>
 					<li class="menu_directivos">
-						<a href="principales-directivos.php" class="full"></a>
+						<a [routerLink]="['directivos']" class="full"></a>
 						Principales Ejecutivos <br>
 						y Directivos
 					</li>
 					<li class="menu_informacion">
-						<a href="informacion-financiera.php" class="full"></a>
+						<a [routerLink]="['finanzas']" class="full"></a>
 						Información <br>
 						Financiera
 					</li>
 					<li class="menu_actualidad">
-						<a href="actualidad.php" class="full"></a>
+						<a [routerLink]="['actualidad']" class="full"></a>
 						Actualidad
 					</li>
 					<li class="menu_encuentrenos">
-						<a href="encuentrenos.php" class="full"></a>
+						<a [routerLink]="['encuentrenos']" class="full"></a>
 						Encuéntrenos
 					</li>
 				</ul>
@@ -50,7 +50,7 @@
 						</div>
 						<div class="ico">
 							<a href="#" target="_blank">
-								<img src="images/ico-instagram.svg">
+								<img src="/assets/images/ico-instagram.svg">
 							</a>
 						</div>
 					</div>

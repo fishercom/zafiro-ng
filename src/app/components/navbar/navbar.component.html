@@ -1,50 +1,69 @@
-<div class="container">
-	<div class="logo">
-		<a href="/"><img [src]="img_logo"></a>
+<header id="header">
+	<div class="container">
+		<div class="logo">
+			<a [routerLink]="['']"><img [src]="img_logo"></a>
+		</div>
+	
+		<nav>
+			<ul class="lista_menu">
+				<li class="menu_organizacion">
+					<a [routerLink]="['organizacion']" class="full"></a>
+					Nuestra <br>
+					Organización
+				</li>
+				<li class="menu_cultura">
+					<a [routerLink]="['cultura']" class="full"></a>
+					Cultura <br>
+					Interna
+				</li>
+				<li class="menu_directivos">
+					<a [routerLink]="['directivos']" class="full"></a>
+					Principales Ejecutivos <br>
+					y Directivos
+				</li>
+				<li class="menu_informacion">
+					<a [routerLink]="['finanzas']" class="full"></a>
+					Información <br>
+					Financiera
+				</li>
+				<li class="menu_actualidad">
+					<a [routerLink]="['actualidad']" class="full"></a>
+					Actualidad
+				</li>
+				<li class="menu_encuentrenos">
+					<a [routerLink]="['encuentrenos']" class="full"></a>
+					Encuéntrenos
+				</li>
+			</ul>
+		</nav>
+	
+		<div class="barra_gris">	
+			<div class="idioma">
+				<a href="#" class="full"></a>
+				ES
+			</div>
+			<div class="idioma">
+				<a href="#" class="full"></a>
+				EN
+			</div>
+			
+		</div>
 	</div>
-
-	<nav>
-		<ul class="lista_menu">
-			<li class="menu_organizacion">
-				<a [routerLink]="['organizacion']" class="full"></a>
-				Nuestra <br>
-				Organización
-			</li>
-			<li class="menu_cultura">
-				<a [routerLink]="['cultura']" class="full"></a>
-				Cultura <br>
-				Interna
-			</li>
-			<li class="menu_directivos">
-				<a [routerLink]="['directivos']" class="full"></a>
-				Principales Ejecutivos <br>
-				y Directivos
-			</li>
-			<li class="menu_informacion">
-				<a [routerLink]="['finanzas']" class="full"></a>
-				Información <br>
-				Financiera
-			</li>
-			<li class="menu_actualidad">
-				<a [routerLink]="['actualidad']" class="full"></a>
-				Actualidad
-			</li>
-			<li class="menu_encuentrenos">
-				<a [routerLink]="['encuentrenos']" class="full"></a>
-				Encuéntrenos
-			</li>
-		</ul>
-	</nav>
-
-	<div class="barra_gris">	
-		<div class="idioma">
-			<a href="#" class="full"></a>
-			ES
+</header>
+<div class="menu_mobile">
+	<div class="logo">
+		<a href="/">
+			<img src="/assets/images/logo.svg" alt="Inteligo Group">
+		</a>					
+	</div>
+	<div class="sanguche">
+		<div class="lines"></div>
+		<div class="lines"></div>
+		<div class="lines"></div>
+	</div>
+	<div class="mobile_tools">				
+		<div class="btn_close">
+			<img src="/assets/images/btn_close_menu.svg" alt="Inteligo Group">
 		</div>
-		<div class="idioma">
-			<a href="#" class="full"></a>
-			EN
-		</div>
-		
 	</div>
 </div>

@@ -1,2 +1,10 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div id="loader"></div>
+<div class="wrapper wrapper_{{wrapper}}">	
+    <app-navbar></app-navbar>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+</div>
