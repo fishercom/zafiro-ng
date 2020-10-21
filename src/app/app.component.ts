@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +8,34 @@ import { Router } from "@angular/router";
 })
 export class AppComponent {
 
-  public wrapper: string = "";
+  public wrapper: string = "home";
+
 
   constructor(private router: Router) {
 
-    console.log(this.constructor.name);
+    this.router.events.subscribe((event: Event) => {
 
-  }
+      if (event instanceof NavigationStart) {
+            // Show loading indicator
+        }
 
+        if (event instanceof NavigationEnd) {
+            // Hide loading indicator
+            this.wrapper = event.url === '/' ? 'home': 'interna';
+            //carousel(); //jquery custom function
+            //console.log(event);
+        }
+
+        if (event instanceof NavigationError) {
+            // Hide loading indicator
+            // Present error to user
+            console.log(event.error);
+        }
+    });
+
+}
   ngOnInit() {
-      this.wrapper = this.router.url === '/organizacion' || this.router.url === '/'? 'home': 'interna';
-      this.wrapper = "interna";
-      console.log(this.router.url);
+
   }
 
 
